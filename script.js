@@ -131,43 +131,13 @@ const heroStats = document.querySelector('.hero-stats');
 if (heroStats) heroObserver.observe(heroStats);
 
 // ==================== Contact Form ====================
+// Form is handled by FormSubmit.co — no JS needed for submission.
+// Show a loading state on submit button.
 const contactForm = document.querySelector('.contact-form');
 if (contactForm) {
-    contactForm.addEventListener('submit', async (e) => {
-        e.preventDefault();
+    contactForm.addEventListener('submit', () => {
         const btn = contactForm.querySelector('.btn-submit');
-        const originalHTML = btn.innerHTML;
         btn.innerHTML = '<span>Sending...</span>';
         btn.disabled = true;
-
-        try {
-            const formData = new FormData(contactForm);
-            const response = await fetch('/', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                body: new URLSearchParams(formData).toString(),
-            });
-
-            if (response.ok) {
-                btn.innerHTML = '<span>Message Sent!</span> &#10003;';
-                btn.style.background = '#10b981';
-                contactForm.reset();
-                setTimeout(() => {
-                    btn.innerHTML = originalHTML;
-                    btn.style.background = '';
-                    btn.disabled = false;
-                }, 3000);
-            } else {
-                throw new Error('Failed');
-            }
-        } catch {
-            btn.innerHTML = '<span>Failed — try email</span>';
-            btn.style.background = '#ef4444';
-            setTimeout(() => {
-                btn.innerHTML = originalHTML;
-                btn.style.background = '';
-                btn.disabled = false;
-            }, 3000);
-        }
     });
 }

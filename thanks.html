@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Pooja Devi M</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .thanks-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+        }
+        .thanks-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 3rem 2.5rem;
+            max-width: 500px;
+        }
+        .thanks-icon { font-size: 4rem; margin-bottom: 1rem; }
+        .thanks-card h1 { font-size: 2rem; margin-bottom: 0.75rem; }
+        .thanks-card p { color: var(--text-muted); margin-bottom: 2rem; font-size: 1rem; }
+    </style>
+</head>
+<body>
+    <div class="thanks-page">
+        <div class="thanks-card">
+            <div class="thanks-icon">&#10024;</div>
+            <h1>Thank You!</h1>
+            <p>Your message has been sent successfully. I'll get back to you soon!</p>
+            <a href="index.html" class="btn btn-primary">
+                <span>Back to Portfolio</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+        </div>
+    </div>
+    <script>
+        const saved = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', saved);
+    </script>
+</body>
+</html>

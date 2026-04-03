@@ -456,20 +456,6 @@ a:hover { color: var(--accent-cyan); }
     z-index: 1;
 }
 
-.profile-badge {
-    position: absolute;
-    bottom: 5px;
-    right: -10px;
-    background: var(--accent-green);
-    color: #fff;
-    font-size: 0.72rem;
-    font-weight: 600;
-    padding: 0.35rem 0.75rem;
-    border-radius: 20px;
-    z-index: 2;
-    white-space: nowrap;
-    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
-}
 
 /* Code Window */
 .code-window {

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pooja Devi M | Java Backend Developer</title>
+    <meta name="description" content="Portfolio of Pooja Devi M — Java Backend Developer with 3+ years at Zoho Corporation. Spring Boot, REST APIs, Microservices.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo"><span class="logo-bracket">&lt;</span>PD<span class="logo-bracket">/&gt;</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                    <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-greeting">
+                    <span class="greeting-wave">&#128075;</span> Hello, I'm
+                </p>
+                <h1 class="hero-name">Pooja Devi M</h1>
+                <h2 class="hero-title">
+                    <span class="title-prefix">&#123;</span>
+                    Java Backend Developer
+                    <span class="title-prefix">&#125;</span>
+                </h2>
+                <p class="hero-desc">3+ years building scalable, high-performance backend systems at <strong>Zoho Corporation</strong>. Passionate about solving complex problems and crafting robust architectures.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Get In Touch</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="CV_Pooja_Devi.pdf" download class="btn btn-gradient">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                        <span>Download Resume</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-count="3">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Years Exp.</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="6">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="93">0</span><span class="stat-plus">%</span>
+                        <span class="stat-label">Perf. Gain</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="profile-wrapper">
+                    <div class="profile-ring"></div>
+                    <img src="pooja.png" alt="Pooja Devi M" class="profile-photo">
+                    <div class="profile-badge">
+                        <span>&#9889;</span> Open to Work
+                    </div>
+                </div>
+                <div class="code-window">
+                    <div class="code-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="code-filename">Developer.java</span>
+                    </div>
+                    <pre class="code-body"><code><span class="kw">public class</span> <span class="cls">Developer</span> {
+  <span class="kw">String</span> name = <span class="str">"Pooja Devi"</span>;
+  <span class="kw">String</span> role = <span class="str">"Backend Dev"</span>;
+  <span class="kw">String[]</span> stack = {
+    <span class="str">"Java"</span>, <span class="str">"Spring Boot"</span>,
+    <span class="str">"PostgreSQL"</span>, <span class="str">"REST APIs"</span>
+  };
+  <span class="kw">public String</span> <span class="fn">build</span>() {
+    <span class="kw">return</span> <span class="str">"Scalable Systems"</span>;
+  }
+}</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title"><span class="title-accent">//</span> About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I'm a results-driven <strong>Java Backend Developer</strong> at <strong>Zoho Corporation</strong> with a passion for designing and developing scalable, high-performance applications.</p>
+                    <p>With expertise in <strong>Java (8, 11, 17)</strong>, <strong>Spring Boot</strong>, and <strong>RESTful API</strong> development, I specialize in building robust backend systems and integrating native and third-party services, ensuring seamless data flow across platforms.</p>
+                    <p>I'm experienced in <strong>Python scripting</strong>, <strong>secure API design</strong>, and have a strong understanding of <strong>microservices architecture</strong>. I thrive in collaborative environments and am always eager to learn and implement new technologies.</p>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#9889;</div>
+                        <div>
+                            <h3>Performance</h3>
+                            <p>Reduced sync timing from 9 hours to 40 minutes &mdash; 93% improvement</p>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#128737;</div>
+                        <div>
+                            <h3>Security</h3>
+                            <p>OAuth 2.0, CSRF protection, SQL injection prevention, TLS/SSL</p>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#9881;&#65039;</div>
+                        <div>
+                            <h3>Architecture</h3>
+                            <p>Microservices, RESTful APIs, event-driven design, multithreading</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section section-alt" id="experience">
+        <div class="container">
+            <h2 class="section-title"><span class="title-accent">//</span> Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Member Technical Staff (MTS)</h3>
+                                <span class="timeline-company">Zoho Corporation</span>
+                            </div>
+                            <span class="timeline-date">Jan 2023 &ndash; Present</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Developed and optimized REST APIs using Java 11 and Spring Boot for high-traffic applications</li>
+                            <li>Built an optimization framework achieving <strong>93% reduction</strong> in data sync time (9 hours &rarr; 40 minutes)</li>
+                            <li>Developed a production logging framework for rapid identification of critical issues</li>
+                            <li>Led integration of third-party services (Splunk, mail servers, analytics platforms)</li>
+                            <li>Implemented OAuth 2.0 authentication, CSRF protection, and secure API design patterns</li>
+                            <li>Provided production support across all major releases with zero downtime</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <h2 class="section-title"><span class="title-accent">//</span> Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-color="blue">
+                    <div class="project-number">01</div>
+                    <h3>Splunk Integration Platform</h3>
+                    <p>Centralized system log monitoring platform with real-time threat detection and event analysis. Built with Java 11, Python, and JavaScript dashboards.</p>
+                    <div class="project-tags">
+                        <span>Java 11</span><span>Python</span><span>REST APIs</span><span>Splunk</span><span>JavaScript</span>
+                    </div>
+                </div>
+                <div class="project-card" data-color="purple">
+                    <div class="project-number">02</div>
+                    <h3>Syslog Server Integration</h3>
+                    <p>High-performance centralized Syslog server supporting TCP/UDP with TLS encryption for secure real-time log transmission and analysis.</p>
+                    <div class="project-tags">
+                        <span>Java 11</span><span>TCP/UDP</span><span>TLS</span><span>PostgreSQL</span><span>Python</span>
+                    </div>
+                </div>
+                <div class="project-card" data-color="teal">
+                    <div class="project-number">03</div>
+                    <h3>User Authentication System</h3>
+                    <p>Multi-channel user activation and authentication with email/SMS verification, security filters against SQL injection and CSRF attacks.</p>
+                    <div class="project-tags">
+                        <span>Java</span><span>REST APIs</span><span>OAuth 2.0</span><span>PostgreSQL</span><span>MS SQL</span>
+                    </div>
+                </div>
+                <div class="project-card" data-color="orange">
+                    <div class="project-number">04</div>
+                    <h3>OAuth Mail Server Integration</h3>
+                    <p>Secure mail server integration with OAuth 2.0 authentication for automated, safe email communication with robust token management.</p>
+                    <div class="project-tags">
+                        <span>Java</span><span>OAuth 2.0</span><span>Hibernate</span><span>JPA</span><span>PostgreSQL</span>
+                    </div>
+                </div>
+                <div class="project-card" data-color="pink">
+                    <div class="project-number">05</div>
+                    <h3>Analytics &amp; BI Integration</h3>
+                    <p>Integrated analytics platform with BI server for automated data transfer and real-time reporting with optimized data pipelines.</p>
+                    <div class="project-tags">
+                        <span>Spring Boot</span><span>Spring JPA</span><span>PostgreSQL</span><span>REST APIs</span>
+                    </div>
+                </div>
+                <div class="project-card" data-color="green">
+                    <div class="project-number">06</div>
+                    <h3>ITSM &amp; Asset Management</h3>
+                    <p>End-to-end integration of service desk and asset management systems with automated workflows for ticket creation and asset tracking.</p>
+                    <div class="project-tags">
+                        <span>Java</span><span>Servlets</span><span>PostgreSQL</span><span>MS SQL</span><span>REST APIs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <h2 class="section-title"><span class="title-accent">//</span> Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>&#128187; Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-name">Java (8, 11, 17)</span><div class="skill-bar"><div class="skill-fill" data-width="95%"></div></div></div>
+                        <div class="skill-item"><span class="skill-name">Python</span><div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div></div>
+                        <div class="skill-item"><span class="skill-name">SQL</span><div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div></div>
+                        <div class="skill-item"><span class="skill-name">JavaScript</span><div class="skill-bar"><div class="skill-fill" data-width="65%"></div></div></div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>&#9881;&#65039; Frameworks</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-name">Spring Boot</span><div class="skill-bar"><div class="skill-fill" data-width="92%"></div></div></div>
+                        <div class="skill-item"><span class="skill-name">Spring JPA / Hibernate</span><div class="skill-bar"><div class="skill-fill" data-width="88%"></div></div></div>
+                        <div class="skill-item"><span class="skill-name">Jersey / Servlets</span><div class="skill-bar"><div class="skill-fill" data-width="75%"></div></div></div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>&#128451;&#65039; Databases</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-name">PostgreSQL</span><div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div></div>
+                        <div class="skill-item"><span class="skill-name">MS SQL</span><div class="skill-bar"><div class="skill-fill" data-width="82%"></div></div></div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>&#128274; Security &amp; DevOps</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-name">OAuth 2.0 / TLS/SSL</span><div class="skill-bar"><div class="skill-fill" data-width="88%"></div></div></div>
+                        <div class="skill-item"><span class="skill-name">Git / Maven</span><div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div></div>
+                        <div class="skill-item"><span class="skill-name">REST API Design</span><div class="skill-bar"><div class="skill-fill" data-width="93%"></div></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section class="section" id="education">
+        <div class="container">
+            <h2 class="section-title"><span class="title-accent">//</span> Education &amp; Certifications</h2>
+            <div class="edu-grid">
+                <div class="edu-card">
+                    <div class="edu-icon">&#127891;</div>
+                    <h3>Thiagarajar College of Engineering</h3>
+                    <p class="edu-degree">B.E. in Electrical and Electronics</p>
+                    <p class="edu-gpa">CGPA: 9.6</p>
+                    <p class="edu-minor">Minors: Embedded Systems, Microcontroller Interfacing, Hardware Control</p>
+                </div>
+                <div class="cert-list">
+                    <h3>&#127942; Certifications</h3>
+                    <div class="cert-item">
+                        <span class="cert-badge">&#10003;</span>
+                        <span>Java Fundamentals &mdash; HackerRank</span>
+                    </div>
+                    <div class="cert-item">
+                        <span class="cert-badge">&#10003;</span>
+                        <span>Python Basics &mdash; HackerRank</span>
+                    </div>
+                    <div class="cert-item">
+                        <span class="cert-badge">&#10003;</span>
+                        <span>Python Data Structures &mdash; Coursera</span>
+                    </div>
+                    <div class="cert-item">
+                        <span class="cert-badge">&#10003;</span>
+                        <span>Machine Learning Foundations &mdash; University of Washington</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="section section-alt" id="blog">
+        <div class="container">
+            <h2 class="section-title"><span class="title-accent">//</span> Blog &amp; Articles</h2>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-tag">Coming Soon</div>
+                    <h3>Building Scalable REST APIs with Spring Boot</h3>
+                    <p>Lessons learned from designing high-traffic API systems at Zoho, including caching strategies and performance optimization.</p>
+                    <span class="blog-date">Stay tuned...</span>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-tag">Coming Soon</div>
+                    <h3>OAuth 2.0 Authentication Done Right</h3>
+                    <p>A practical guide to implementing secure OAuth flows in Java backend applications with token management best practices.</p>
+                    <span class="blog-date">Stay tuned...</span>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-tag">Coming Soon</div>
+                    <h3>From 9 Hours to 40 Minutes: Optimization Story</h3>
+                    <p>How I achieved 93% reduction in data sync time through systematic profiling, caching, and architectural improvements.</p>
+                    <span class="blog-date">Stay tuned...</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title"><span class="title-accent">//</span> Get In Touch</h2>
+            <p class="contact-intro">I'm open to new opportunities and collaborations. Feel free to reach out!</p>
+            <div class="contact-layout">
+                <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                    <input type="hidden" name="form-name" value="contact">
+                    <p class="hidden" style="display:none"><label>Don't fill this out: <input name="bot-field"></label></p>
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span>Send Message</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2L15 22L11 13L2 9L22 2Z"/></svg>
+                    </button>
+                </form>
+                <div class="contact-info">
+                    <a href="mailto:poojadevi030502@gmail.com" class="contact-card">
+                        <div class="contact-icon">&#9993;&#65039;</div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>poojadevi030502@gmail.com</p>
+                        </div>
+                    </a>
+                    <a href="tel:+916382856671" class="contact-card">
+                        <div class="contact-icon">&#128222;</div>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+91 6382856671</p>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/pooja-devi-m-5741b11b1/" target="_blank" rel="noopener noreferrer" class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </div>
+                        <div>
+                            <h3>LinkedIn</h3>
+                            <p>linkedin.com/in/pooja-devi-m</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/poojadevimd-hub" target="_blank" rel="noopener noreferrer" class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </div>
+                        <div>
+                            <h3>GitHub</h3>
+                            <p>github.com/poojadevimd-hub</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <span class="footer-logo"><span class="logo-bracket">&lt;</span>PD<span class="logo-bracket">/&gt;</span></span>
+            <p>Designed &amp; Built by Pooja Devi M &copy; 2026</p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/pooja-devi-m-5741b11b1/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+                <a href="https://github.com/poojadevimd-hub" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+                <a href="mailto:poojadevi030502@gmail.com" aria-label="Email">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
